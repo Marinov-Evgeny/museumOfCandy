@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #E62B00;
+    --secondary-color: #FFFFF0;
+    --background-color: #FFB6C1;
+    --paragraph-color: #CC0E74;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--background-color);
+    width: 100%;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+
+/* Navbar */
+
+#customNavbar .navbar-toggler {
+    outline: none;
+    border-color: transparent;
+}
+
+#customNavbar .navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 8px 0px;
+}
+
+#customNavbar .nav-link {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+#customNavbar .nav-link:hover {
+    color: var(--primary-color);
+}
+
+#headerGroup span {
+    color: var(--primary-color);
+}
+
+#headerGroup h1 {
+    color: var(--secondary-color);
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #DEC0DE;
+    transition: background 600ms;
+}
+
+@media (max-width: 1410px) {
+    #headerGroup h1 {
+        color: var(--secondary-color);
+        font-weight: 100;
+        font-size: 2.6rem;
+    }
+}
+
+
+/* Content */
+
+.customContent {
+    margin-top: 75px;
+}
+
+.customText h2,
+.customText p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.customText p {
+    color: var(--paragraph-color);
+    font-size: 1.25rem;
+    line-height: 1.75;
+}
